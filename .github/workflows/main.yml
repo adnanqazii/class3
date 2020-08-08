@@ -38,5 +38,5 @@ jobs:
       run: npm install -g surge
     
     - name: Deploying on surge
-      run: surge ./build raspy-cannon.surge.sh  --token ${{SURGE_TOKEN}}
+      run: surge ./build raspy-cannon.surge.sh  --token ${{secrets.SURGE_TOKEN}}
  
